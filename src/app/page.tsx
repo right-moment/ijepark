@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex h-[100svh] flex-col items-center p-4 sm:p-8 relative overflow-hidden">
-      {/* Top Right Logo Contact Link */}
-      <div className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20 animate-in fade-in duration-1000">
+      {/* Top Right Logo Contact Link (Desktop only) */}
+      <div className="hidden sm:block absolute top-6 right-6 z-20 animate-in fade-in duration-1000">
         <a href="mailto:contact@ijepark.com" title="Contact Us" className="block hover:opacity-80 transition-opacity">
-          <Image src="/logo.png" alt="IJE Park Logo" width={80} height={80} className="w-14 h-14 sm:w-16 sm:h-16 object-contain drop-shadow-sm cursor-pointer" />
+          <Image src="/logo.png" alt="IJE Park Logo" width={80} height={80} className="w-16 h-16 object-contain drop-shadow-sm cursor-pointer" />
         </a>
       </div>
 
@@ -20,7 +20,12 @@ export default function Home() {
       <div className="w-full max-w-5xl flex-1 flex flex-col items-center justify-center z-10 min-h-0">
         
         {/* Header Section */}
-        <header className="text-center mb-4 sm:mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 w-full">
+        <header className="text-center mb-4 sm:mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 w-full flex flex-col items-center">
+          {/* Mobile Logo Contact Link */}
+          <a href="mailto:contact@ijepark.com" title="Contact Us" className="sm:hidden block hover:opacity-80 transition-opacity mb-4">
+            <Image src="/logo.png" alt="IJE Park Logo" width={80} height={80} className="w-14 h-14 object-contain drop-shadow-sm cursor-pointer" />
+          </a>
+
           <div className="relative mx-auto w-max mb-3 sm:mb-4">
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-gray-800 whitespace-nowrap">
               Welcome to IJE Park
