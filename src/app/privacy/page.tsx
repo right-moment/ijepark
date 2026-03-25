@@ -7,7 +7,7 @@ export default function PrivacyPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 mb-2">
           Privacy Policy for IJE
         </h1>
-        <p className="text-sm text-gray-500 mb-8">Last Updated: March 24, 2026</p>
+        <p className="text-sm text-gray-500 mb-8">Last Updated: March 25, 2026</p>
         
         <div className="text-gray-600 space-y-4 text-sm leading-relaxed">
           <p>
@@ -66,10 +66,8 @@ export default function PrivacyPage() {
           <h2 className="text-lg font-semibold text-gray-800 mt-8 mb-3">8. Contact Us</h2>
           <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
           <ul className="list-none mt-2 space-y-2">
-            <li><strong>Brand:</strong> IJE</li>
             <li><strong>Email:</strong> contact@ijepark.com</li>
-            <li><strong>Address:</strong> [Your Virtual Office Address in English]</li>
-            <li><strong>Business Registration Number:</strong> [Your Business Number]</li>
+            <li><strong>Website:</strong> ijepark.com</li>
           </ul>
         </div>
 

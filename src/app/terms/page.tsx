@@ -7,7 +7,7 @@ export default function TermsPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 mb-2">
           Terms of Service for IJE
         </h1>
-        <p className="text-sm text-gray-500 mb-8">Last Updated: March 24, 2026</p>
+        <p className="text-sm text-gray-500 mb-8">Last Updated: March 25, 2026</p>
         
         <div className="text-gray-600 space-y-5 text-sm leading-relaxed">
           <p>
@@ -60,9 +60,8 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold text-gray-800 mt-8 mb-3">9. Contact Us</h2>
           <p>If you have any questions about these Terms, please contact us at:</p>
           <ul className="list-none mt-2 space-y-2">
-            <li><strong>Brand:</strong> IJE</li>
             <li><strong>Email:</strong> contact@ijepark.com</li>
-            <li><strong>Business Registration Number:</strong> [Your Business Number]</li>
+            <li><strong>Website:</strong> ijepark.com</li>
           </ul>
         </div>
 

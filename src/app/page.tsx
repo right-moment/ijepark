@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-lg sm:text-xl text-gray-500 font-medium">
-            Explore ideas, journeys, and entertainment
+            Start now
           </p>
         </header>
 
@@ -41,7 +41,7 @@ export default function Home() {
       <div className="flex-none w-full mt-auto">
         <footer className="w-full text-center text-xs text-gray-400 pb-2 sm:pb-4 pt-4 sm:pt-6 animate-in fade-in duration-1000 delay-500 z-10 flex flex-col gap-2 items-center">
           <div>
-            <span>Brand: IJE | Business Reg No: 000-00-00000 | Contact: contact@ijepark.com</span>
+            <span>Brand: IJE | Business Reg No: 676-05-01077 | Contact: contact@ijepark.com</span>
           </div>
           <div>
             <span>&copy; 2026 IJE | </span>

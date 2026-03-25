@@ -11,21 +11,21 @@ const dots = [
 const LineStroke = ({ d, isBackground = false }: { d: string; isBackground?: boolean }) => {
   return (
     <>
-      <path 
-        d={d} 
-        stroke={isBackground ? "transparent" : "#FFC83D"} 
-        strokeWidth="56" 
-        fill="none" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
+      <path
+        d={d}
+        stroke={isBackground ? "transparent" : "#FFC83D"}
+        strokeWidth="56"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
-      <path 
-        d={d} 
-        stroke={isBackground ? "transparent" : "#F7F7F7"} 
-        strokeWidth="44" 
-        fill="none" 
-        strokeLinecap="round" 
-        strokeLinejoin="round" 
+      <path
+        d={d}
+        stroke={isBackground ? "transparent" : "#F7F7F7"}
+        strokeWidth="44"
+        fill="none"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </>
   );
@@ -59,17 +59,17 @@ export default function IJEMap() {
         ))}
 
         {/* Connective subtle background line */}
-        <path 
-          d="M 220 328 C 380 340, 560 310, 780 328" 
-          stroke="#FFC83D" 
-          strokeWidth="6" 
-          fill="none" 
-          opacity="0.2" 
-          strokeLinecap="round" 
+        <path
+          d="M 220 328 C 380 340, 560 310, 780 328"
+          stroke="#FFC83D"
+          strokeWidth="6"
+          fill="none"
+          opacity="0.2"
+          strokeLinecap="round"
         />
 
-        {/* --- I : Idea --- */}
-        <Link href="/ideas" className="group outline-none cursor-pointer">
+        {/* --- I : Iam --- */}
+        <Link href="/iam" className="group outline-none cursor-pointer">
           <rect x="220" y="50" width="100" height="300" fill="transparent" />
           <g className="group-hover:drop-shadow-[0_0_15px_rgba(253,184,19,0.5)] transition-all duration-300">
             {/* Tiny Flat */}
@@ -79,8 +79,8 @@ export default function IJEMap() {
             <LineStroke d="M 270 100 L 270 300" />
           </g>
           <g className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:-translate-y-4 pointer-events-none">
-            <rect x="220" y="30" width="100" height="32" rx="16" fill="#FDB813" />
-            <text x="270" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">Idea - app</text>
+            <rect x="225" y="30" width="90" height="32" rx="16" fill="#FDB813" />
+            <text x="270" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">I Am</text>
             <polygon points="265,62 275,62 270,68" fill="#FDB813" />
           </g>
         </Link>
@@ -92,8 +92,8 @@ export default function IJEMap() {
             <LineStroke d="M 510 100 L 510 240 A 60 60 0 0 1 390 240 L 390 220" />
           </g>
           <g className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:-translate-y-4 pointer-events-none">
-            <rect x="375" y="30" width="150" height="32" rx="16" fill="#2EC4B6" />
-            <text x="450" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">Journey - youtube</text>
+            <rect x="410" y="30" width="80" height="32" rx="16" fill="#2EC4B6" />
+            <text x="450" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">Journey</text>
             <polygon points="445,62 455,62 450,68" fill="#2EC4B6" />
           </g>
         </Link>
@@ -105,8 +105,8 @@ export default function IJEMap() {
             <LineStroke d="M 730 100 L 650 100 A 20 20 0 0 0 630 120 L 630 280 A 20 20 0 0 0 650 300 L 730 300 M 630 200 L 710 200" />
           </g>
           <g className="opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:-translate-y-4 pointer-events-none">
-            <rect x="585" y="30" width="190" height="32" rx="16" fill="#F4A261" />
-            <text x="680" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">Entertainment - game</text>
+            <rect x="620" y="30" width="120" height="32" rx="16" fill="#F4A261" />
+            <text x="680" y="51" fill="white" fontSize="14" fontWeight="600" textAnchor="middle">Entertainment</text>
             <polygon points="675,62 685,62 680,68" fill="#F4A261" />
           </g>
         </Link>
