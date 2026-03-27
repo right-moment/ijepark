@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailLink from "@/components/EmailLink";
 
 export default function TermsPage() {
   return (
@@ -7,7 +8,7 @@ export default function TermsPage() {
         <h1 className="text-3xl font-bold tracking-tight text-gray-800 mb-2">
           Terms of Service for IJE
         </h1>
-        <p className="text-sm text-gray-500 mb-8">Last Updated: March 25, 2026</p>
+        <p className="text-sm text-gray-500 mb-8">Last Updated: March 27, 2026</p>
         
         <div className="text-gray-600 space-y-5 text-sm leading-relaxed">
           <p>
@@ -60,7 +61,7 @@ export default function TermsPage() {
           <h2 className="text-lg font-semibold text-gray-800 mt-8 mb-3">9. Contact Us</h2>
           <p>If you have any questions about these Terms, please contact us at:</p>
           <ul className="list-none mt-2 space-y-2">
-            <li><strong>Email:</strong> contact@ijepark.com</li>
+            <li><strong>Email:</strong> <EmailLink className="hover:text-gray-800 underline underline-offset-2" /></li>
             <li><strong>Website:</strong> ijepark.com</li>
           </ul>
         </div>

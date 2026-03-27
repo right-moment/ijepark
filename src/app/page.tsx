@@ -1,15 +1,16 @@
 import IJEMap from "@/components/IJEMap";
 import Link from "next/link";
 import Image from "next/image";
+import EmailLink from "@/components/EmailLink";
 
 export default function Home() {
   return (
     <main className="flex h-[100svh] flex-col items-center p-4 sm:p-8 relative overflow-hidden">
       {/* Top Right Logo Contact Link (Desktop only) */}
       <div className="hidden sm:block absolute top-6 right-6 z-20 animate-in fade-in duration-1000">
-        <a href="mailto:contact@ijepark.com" title="Contact Us" className="block hover:opacity-80 transition-opacity">
+        <EmailLink title="Contact Us" className="block hover:opacity-80 transition-opacity">
           <Image src="/logo.png" alt="IJE Park Logo" width={80} height={80} className="w-16 h-16 object-contain drop-shadow-sm cursor-pointer" />
-        </a>
+        </EmailLink>
       </div>
 
       {/* 
@@ -22,9 +23,9 @@ export default function Home() {
         {/* Header Section */}
         <header className="text-center mb-4 sm:mb-8 animate-in fade-in slide-in-from-bottom-4 duration-1000 w-full flex flex-col items-center">
           {/* Mobile Logo Contact Link */}
-          <a href="mailto:contact@ijepark.com" title="Contact Us" className="sm:hidden block hover:opacity-80 transition-opacity mb-4">
+          <EmailLink title="Contact Us" className="sm:hidden block hover:opacity-80 transition-opacity mb-4">
             <Image src="/logo.png" alt="IJE Park Logo" width={80} height={80} className="w-14 h-14 object-contain drop-shadow-sm cursor-pointer" />
-          </a>
+          </EmailLink>
 
           <div className="relative mx-auto w-max mb-3 sm:mb-4">
             <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-gray-800 whitespace-nowrap">
@@ -46,7 +47,8 @@ export default function Home() {
       <div className="flex-none w-full mt-auto">
         <footer className="w-full text-center text-xs text-gray-400 pb-2 sm:pb-4 pt-4 sm:pt-6 animate-in fade-in duration-1000 delay-500 z-10 flex flex-col gap-2 items-center">
           <div>
-            <span>Brand: IJE | Business Reg No: 676-05-01077 | Contact: contact@ijepark.com</span>
+            <span>Brand: IJE | Contact: </span>
+            <EmailLink className="hover:text-gray-600 underline underline-offset-2 transition-colors" />
           </div>
           <div>
             <span>&copy; 2026 IJE | </span>
