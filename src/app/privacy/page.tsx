@@ -33,7 +33,9 @@ export default function PrivacyPage() {
           </ul>
 
           <h2 className="text-lg font-semibold text-gray-800 mt-8 mb-3">3. App-Specific Disclosures</h2>
-          <h3 className="text-md font-semibold text-gray-800 mt-4 mb-2">Three Today</h3>
+          <h3 className="text-md font-bold text-gray-900 mt-6 mb-3 border-l-2 border-[#2EC4B6] pl-2.5">
+            Three Today : Tasks &amp; To-do
+          </h3>
           <p>
             Three Today is a simple task management app designed to help users focus on a small number of tasks each day.
           </p>
